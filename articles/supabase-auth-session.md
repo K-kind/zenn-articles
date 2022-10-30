@@ -1,5 +1,5 @@
 ---
-title: "supbase-jsでAuthのセッションがすぐに切れる問題の対処"
+title: "supabase-jsでAuthのセッションがすぐに切れる問題の対処"
 emoji: "🐷"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["supabase", "javascript"]
