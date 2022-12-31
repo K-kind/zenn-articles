@@ -32,7 +32,7 @@ serve(async (req) => {
 JSのクライアント側で以下のように呼び出す。
 
 ```ts
-await supabase.functions.invoke("hello", { name: 'World' })
+await supabase.functions.invoke("hello", body: { name: 'World' })
 ```
 
 この時、以下のようなエラーが発生して呼び出しが失敗した。
@@ -126,7 +126,7 @@ export const handleWithCors = (
 ```
 
 ```ts
-import { handleWithCors } from "../_shared/handleWithCors.ts";
+import { handleWithCors } from "../_shared/handleWithCors.ts"
 
 serve(
   handleWithCors(async (req) => {
