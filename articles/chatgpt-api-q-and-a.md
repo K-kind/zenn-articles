@@ -8,6 +8,11 @@ published: true
 
 今さらながらChatGPTのAPIを試してみて、分かりにくかった点についてまとめます。
 
+:::message
+2023/4/1追記
+正確にはChatGPT APIではなく、OpenAIのChat Completion APIと呼ぶのが正しそうです。
+:::
+
 # 先に結論
 
 - `gpt-3.5-turbo` と `gpt-3.5-turbo-0301` って何が違うの？
