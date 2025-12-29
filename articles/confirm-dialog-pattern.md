@@ -298,7 +298,7 @@ export const useConfirmDialog = () => {
 
 # 使用例
 
-これで、冒頭で紹介したようなコードが書けるようになります。
+これで、冒頭で紹介した `window.confirm` と同じ流れで確認ダイアログを利用できるようになります。
 
 ```tsx
 import { useConfirmDialog } from "@/hooks/useConfirm";
