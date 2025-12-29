@@ -61,12 +61,8 @@ Web 標準の `window.confirm` と同じように、削除ボタン押下時の�
 
 ```tsx
 export const ItemDeleteButton = () => {
-  const { confirm } = useConfirmDialog();
-
   const handleClick = async () => {
-    const confirmed = await confirm({
-      description: "アイテムを削除しますか？",
-    });
+    const confirmed = window.confirm("アイテムを削除しますか？");
     if (!confirmed) return;
 
     // アイテム削除処理
@@ -80,8 +76,7 @@ export const ItemDeleteButton = () => {
 };
 ```
 
-この記事では、この **Promise ベースの Confirm Dialog パターン** を
-React + TypeScript で実装する方法を紹介します。
+この記事では、上記のようなインターフェースで、自前の確認ダイアログを表示できるようにする方法を紹介します。
 
 # 実装方法
 
